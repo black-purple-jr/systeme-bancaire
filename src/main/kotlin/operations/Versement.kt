@@ -1,3 +1,3 @@
 package operations
 
-class Versement (numero: String, date: String, montant: Double): Operation(numero, date, montant)
+class Versement (montant: Double): Operation(montant = montant)
