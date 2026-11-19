@@ -26,7 +26,7 @@ class CompteCourant(
 
     override fun retirer(montant: Double): Retrait {
         if (montant <= 0.0) throw Exception("Montant doit être supérieure à 0")
-        if (montant >= solde + decouvert) throw Exception("Vous ne pouvez pas retirer ce montant")
+        if (montant > solde + decouvert) throw Exception("Vous ne pouvez pas retirer ce montant")
 
         var operation = Retrait(montant)
         listeOperations.add(operation)
