@@ -62,6 +62,10 @@ class CompteCourant(
     override fun totalRetraits(): Double {
         return totalRetraits
     }
+
+    override fun toString(): String {
+        return "CompteCourant(compte = $code, solde = $solde, statut = $statut)"
+    }
 }
 
 

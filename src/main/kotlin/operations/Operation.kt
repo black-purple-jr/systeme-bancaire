@@ -9,6 +9,7 @@ abstract class Operation(
     val date: String = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")),
     val montant: Double
 ) {
+
     companion object {
         private var compteur = 0
 
